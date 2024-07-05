@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     font-family: "Alice", serif;
     line-height: 150%;
@@ -10,7 +16,6 @@ body {
 }
 
 #page {
-    box-sizing: border-box;
     width: 800px;
     padding: 24px;
     background-color: #F0E8C2;
@@ -20,6 +25,18 @@ body {
 
 #page img {
     border-radius: 16px;
+}
+
+main {
+    padding: 24px;
+}
+
+section + section {
+    margin-top: 24px;
+}
+
+#about p + p {
+    margin-top: 12px;
 }
 
 h1 {
@@ -33,4 +50,10 @@ h2 {
 
 h1, h2 {
     color: #291B1A;
+    margin-bottom: 4px;
+    line-height: 150%;
+}
+
+ul {
+    padding-left: 24px;
 }
